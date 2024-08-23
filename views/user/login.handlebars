@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="row unselected">
+    <div class="col s10 m6 push-s1 push-m3">
+
+        {{#if admin_found}}
+            <h4>Entrar</h4>
+            <hr>
+
+            <form action="" method="post">
+                <div class="input-field col s12">
+                    <input name="ident" id="ident" type="text" placeholder="Telefone | Email">
+                    <label for="ident">Identificador</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <input name="senha" id="senha" type="password">
+                    <label for="senha">Senha</label>
+                </div>
+
+                <div class="col s12">
+                    <p class="top-20-">
+                        <label>
+                            <input type="checkbox" onclick="modoLimpo()" />
+                            <span>Ver Senha</span>
+                        </label>
+                    </p>
+                </div>
+
+                <div class="col s12 top-20">
+                    <button class="btn waves-effect w-100">Entrar</button>
+                </div>
+            </form>
+        {{else}}
+            <h5 class="center">Comece por Criar a Conta Admin</h5>
+            <hr> <br>
+
+            <form action="/admin/cadastro" method="post">
+                <button type="submit" class="no-btn w-100 transparent">
+                    <div class="card primary white-text">
+                        <div class="card-content">
+                            <h4 class="upper">Criar Admin</h4>
+                        </div>
+                    </div>
+                </button>
+            </form>
+            
+
+            <p class="center top-50">
+                Após clicar em Criar Admin, contate o Desenvolvedor deste WebSite <br><br>
+                <a href="/info#desenvolvedores">
+                    <span class="primary-text number">emaildodesenvolvedor@gmail.com</span> <br>
+                    <span class="primary-text number">Marcos Matfisico</span>
+                </a>
+            </p>
+        {{/if}}
+    </div>
+</div>
+
+<div class="row unselected">
+
+    <div class="col s10 m6 push-s1 push-m3">
+        {{#each erros}}
+        <div class="error_msg card red lighten-2 white-text center">
+            <p class="flash-msg">
+                {{texto}}
+            </p>
+        </div>
+        {{else}}
+
+        {{/each}}
+    </div>
+</div>

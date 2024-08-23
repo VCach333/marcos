@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row top-50">
+        <div class="col s10 m4 push-s1">
+            <div class="chip">
+                <img src="/img/users/{{userLogado.foto}}">
+                <span>{{userLogado.nome}}</span>
+            </div>
+
+            <p>Categoria: {{userLogado.mode}}</p>
+        </div>
+        <div class="col s10 m8 push-s1">
+            <h5 class="upper">opçoes da conta</h5>
+            <hr>
+
+            <a href="/user/edit/{{userLogado.ident}}" class="btn-flat">editar dados</a>
+            <br>
+            <a href="/user/edit/photo/{{userLogado.ident}}" class="btn-flat">alterar foto</a>
+            <br>
+            <form action="/user/logout" method="post">
+                <button type="submit" class="btn-flat red-text">sair</button>
+            </form>
+        </div>
+    </div>
+</div>

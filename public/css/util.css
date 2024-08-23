@@ -1,0 +1,82 @@
+:root {
+    --primary: #009999;
+    --dark: #333;
+    --white: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--primary);
+    margin-bottom: 5vh;
+}
+
+
+nav ul li,
+.upper-text {
+    text-transform: uppercase;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.top-22 {
+    margin-top: 22px;
+}
+
+.top-50 {
+    margin-top: 50px;
+}
+
+.top-100 {
+    margin-top: 100px;
+}
+
+.top-22- {
+    margin-top: -22px;
+}
+
+.top-50- {
+    margin-top: -50px;
+}
+
+.bottom-50 {
+    margin-bottom: 50px;
+}
+
+.r-45 {
+    transform: rotate(45deg);
+}
+
+.left-text {
+    text-align: left !important;
+}
+
+.padd-0 {
+    padding: 0 !important;
+}

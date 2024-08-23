@@ -1,0 +1,77 @@
+<div class="navbar-fixed">
+    <nav class="row">
+        <div class="nav-wrapper container unselected">
+            <a href="/" class="brand-logo ">
+                Logo
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="fas fa-bars"></i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/">Início</a></li>                
+                
+                <li><a href="/info"><i class="fas fa-info-circle"></i></a></li>
+                
+                {{#if user}}
+                    <li>
+                        <a href="/user/perfil">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                {{else}}
+                    <li>
+                        <a href="/user/login">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                {{/if}}
+            </ul>
+
+            <ul class="right hide-on-large-only">
+                {{#if user}}
+                    <li>
+                        <a href="/user/perfil">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                {{else}}
+                    <li>
+                        <a href="/user/login">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                {{/if}}
+            </ul>
+        </div>        
+    </nav>
+</div>
+
+<ul class="sidenav primary" id="mobile-demo">
+    <li><a disabled="true"><i class="fas fa-angle-double-left"></i>Desliza para Fechar</a></li>
+    <li>
+        <a href="/">
+            <i class="fas fa-ss fa-1x"></i>Início
+        </a>
+    </li>
+
+    <li>
+        <a href="/info">
+            <i class="fas fa-info-circle fa-1x"></i>Informações
+        </a>
+    </li>
+    
+    {{#if user}}
+        <li>
+            <a href="/user/perfil">
+                <i class="fas fa-user-circle fa-1x"></i>Perfil
+            </a>
+        </li>
+    {{else}}
+        <li>
+            <a href="/user/login">
+                <i class="fas fa-user-circle fa-1x"></i>Entrar
+            </a>
+        </li>
+    {{/if}}
+</ul>
+
