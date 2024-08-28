@@ -17,8 +17,8 @@
     "phantom-html-to-pdf": "^0.8.3",
     "puppeteer": "^21.2.1"
   },
-  "name": "kemet",
-  "version": "8.0.0",
+  "name": "farm",
+  "version": "1.0.0",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,5 +26,14 @@
   },
   "author": "vcach333",
   "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VCach333/marcos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VCach333/marcos/issues"
+  },
+  "homepage": "https://github.com/VCach333/marcos#readme",
   "description": ""
 }
