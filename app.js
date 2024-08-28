@@ -6,7 +6,6 @@ const bodyParser = require('body-parser')
 const flash = require('connect-flash')
 const session = require('express-session')
 const passport = require('passport')
-const { ThermalPrinter, PrinterTypes, CharacterSet, BreakLine } = require('node-thermal-printer');
 
 // Importando Arquivos
 require('./models/User')
